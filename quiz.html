@@ -1,0 +1,368 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <title>Test Alphabet</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.0/dist/sweetalert2.all.min.js"></script>
+</head>
+
+<body>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+    :root {
+  /*? Colores */
+  --gradient_background: radial-gradient(45.05% 20% at 98% 5%, #3a09ffc6 0%, rgba(255, 255, 255, 0) 80%), linear-gradient(150deg, #76f3ff 5%, #3232fff5 95%);
+  --white: #fff;
+  --black: #000;
+  --dark_blue: #002023;
+  --medium_blue: #0707b7d6;
+  --light_red: #fc4680;
+  --dark_yellow: #ffc57d;
+  --light_yellow: #ffffcc;
+  --hightlight: #ff6e9e;
+  /*? Fuentes */
+  --textFont: 'Rubik';
+  --secondFont: 'Rubik', sans-serif;
+  --boldFont: 'Rubik', sans-serif;
+  --titulo1: bold 84px/103.70px var(--boldFont);
+  --titulo2: bold 34px/36px var(--secondFont);
+  --titulo3: bold 24px/8px var(--secondFont);
+  --titulo4: bold 20px/24px var(--boldFont);
+  --parrafo1: normal 18px/28px var(--textFont);
+  --parrafo2: normal 16px/28px var(--secondFont);
+  --form_button: bold 16px/22px var(--boldFont)
+} 
+    * {
+      transition: all 0.5s;
+      font-family: 'Rubik';
+
+    }
+
+    body {
+      background-color: #FBAB7E;
+      background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);  
+      background-size: cover;
+      background-attachment: fixed;
+      min-block-size: 100vh;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+
+    .contenedor {
+      width: 98vw;
+      height: 97vh;
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .encabezado {
+      color: #8b6bff;
+      position: relative;
+      background: white;
+      min-width: 300px;
+      width: 70%;
+      max-width: 900px;
+      padding: 10px;
+      box-shadow: 10px -10px 5px 5px #8b6bff;
+
+    }
+
+    .categoria {
+      color: transparent;
+    }
+
+    .pregunta {
+      padding: 15px;
+      font: var(--titulo4);
+      
+    }
+
+    .imagen {
+      object-fit: cover;
+      opacity: 0.9;
+      filter: blur(6px)
+      
+    }
+    .imagen:hover {
+      cursor: pointer;
+  
+    }
+  
+    .btn {
+      font: var(--parrafo1);
+      max-width: 600px;
+      background: white;
+      width: 65%;
+      padding: 12px;
+      margin: 5px;
+      cursor: pointer;
+      border: 3px solid #8b6bff
+      
+    }
+    #btn1 {
+      margin-block-start: 20px;
+
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+    
+    .numero{
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font: var(--parrafo2)
+    }
+    
+    .puntaje{
+      padding:10px;
+      color:white;
+      font: var(--form_button)
+    }
+ .animation-container {
+	display: block;
+	position: relative;
+	width: 900px;
+	max-width: 100%;
+	margin: 0 auto;
+	top: -400px;
+}
+.animation-container .lightning-container {
+	position: absolute;
+	top: 0%;
+	left: 0;
+	display: flex;
+	transform: translateY(-30%);
+}
+.animation-container .lightning-container .lightning {
+	position: absolute;
+	display: block;
+	height: 15px;
+	width: 15px;
+	border-radius: 8px;
+	transform-origin: 6px 6px;
+	animation-name: woosh;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+	animation-direction: alternate;
+}
+.animation-container .lightning-container .lightning.white {
+	background-color: #ffffff;
+	box-shadow: 0px 50px 50px 0px rgba(255, 255, 255, 0.3);
+}
+.animation-container .lightning-container .lightning.red {
+	background-color: #8b6bff;
+	box-shadow: 0px 50px 50px 0px rgba(113, 122, 252, 0.3);
+	animation-delay: 0.2s;
+}
+.animation-container .boom-container {
+	position: absolute;
+	display: flex;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	align-items: center;
+	transform: translateY(-50%);
+	left: 200px;
+	top: -145px;
+}
+.animation-container .boom-container .shape {
+	display: inline-block;
+	position: relative;
+	opacity: 0;
+	transform-origin: center center;
+}
+.animation-container .boom-container .shape.triangle {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	transform-origin: 50% 80%;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+	margin-left: -15px;
+	border-width: 0 2.5px 5px 2.5px;
+	border-color: transparent transparent #42e599 transparent;
+	animation-name: boom-triangle;
+}
+.animation-container .boom-container .shape.triangle.big {
+	margin-left: -25px;
+	border-width: 0 5px 10px 5px;
+	border-color: transparent transparent #fade28 transparent;
+	animation-name: boom-triangle-big;
+}
+.animation-container .boom-container .shape.disc {
+	width: 8px;
+	height: 8px;
+	border-radius: 100%;
+	background-color: #d15ff4;
+	animation-name: boom-disc;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+}
+.animation-container .boom-container .shape.circle {
+	width: 20px;
+	height: 20px;
+	animation-name: boom-circle;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+	border-radius: 100%;
+	margin-left: -30px;
+}
+.animation-container .boom-container .shape.circle.white {
+	border: 1px solid white;
+}
+.animation-container .boom-container .shape.circle.big {
+	width: 40px;
+	height: 40px;
+	margin-left: 0px;
+}
+.animation-container .boom-container .shape.circle.big.white {
+	border: 2px solid white;
+}
+.animation-container .boom-container .shape:after {
+	background-color: rgba(178, 215, 232, 0.2);
+}
+.animation-container .boom-container .shape.triangle, .animation-container .boom-container .shape.circle, .animation-container .boom-container .shape.circle.big, .animation-container .boom-container .shape.disc {
+	animation-delay: 0.38s;
+	animation-duration: 3s;
+}
+.animation-container .boom-container .shape.circle {
+	animation-delay: 0.6s;
+}
+.animation-container .boom-container.second {
+	left: 485px;
+	top: 155px;
+}
+.animation-container .boom-container.second .shape.triangle, .animation-container .boom-container.second .shape.circle, .animation-container .boom-container.second .shape.circle.big, .animation-container .boom-container.second .shape.disc {
+	animation-delay: 1.9s;
+}
+.animation-container .boom-container.second .shape.circle {
+	animation-delay: 2.15s;
+}
+@keyframes woosh {
+	0% {
+		width: 12px;
+		transform: translate(0px, 0px) rotate(-35deg);
+ }
+	15% {
+		width: 50px;
+ }
+	30% {
+		width: 12px;
+		transform: translate(214px, -150px) rotate(-35deg);
+ }
+	30.1% {
+		transform: translate(214px, -150px) rotate(46deg);
+ }
+	50% {
+		width: 110px;
+ }
+	70% {
+		width: 12px;
+		transform: translate(500px, 150px) rotate(46deg);
+ }
+	70.1% {
+		transform: translate(500px, 150px) rotate(-37deg);
+ }
+	85% {
+		width: 50px;
+ }
+	100% {
+		width: 12px;
+		transform: translate(700px, 0) rotate(-37deg);
+ }
+}
+@keyframes boom-circle {
+	0% {
+		opacity: 0;
+ }
+	5% {
+		opacity: 1;
+ }
+	30% {
+		opacity: 0;
+		transform: scale(3);
+ }
+}
+@keyframes boom-triangle-big {
+	0% {
+		opacity: 0;
+ }
+	5% {
+		opacity: 1;
+ }
+	40% {
+		opacity: 0;
+		transform: scale(2.5) translate(50px, -50px) rotate(360deg);
+ }
+}
+@keyframes boom-triangle {
+	0% {
+		opacity: 0;
+ }
+	5% {
+		opacity: 1;
+ }
+	30% {
+		opacity: 0;
+		transform: scale(3) translate(20px, 40px) rotate(360deg);
+ }
+}
+@keyframes boom-disc {
+	0% {
+		opacity: 0;
+ }
+	5% {
+		opacity: 1;
+ }
+	40% {
+		opacity: 0;
+		transform: scale(2) translate(-70px, -30px);
+ }
+}
+  </style>
+
+  <div class="contenedor">
+    <div class="puntaje" id="puntaje"></div>
+    <div class="encabezado">
+      <div class="categoria" id="categoria">
+      </div>
+      <div class="numero" id="numero"></div>
+      <div class="pregunta" id="pregunta">
+      </div>
+      <img src="#" class="imagen" id="imagen">
+    </div>
+    <div class="btn" id="btn1" onclick="oprimir_btn(0)"></div>
+    <div class="btn" id="btn2" onclick="oprimir_btn(1)"></div>
+    <div class="btn" id="btn3" onclick="oprimir_btn(2)"></div>
+    <div class="btn" id="btn4" onclick="oprimir_btn(3)"></div>
+    <div class="animation-container">
+      <div class="lightning-container">
+        <div class="lightning white"></div>
+        <div class="lightning red"></div>
+      </div>
+      <div class="boom-container">
+        <div class="shape circle big white"></div>
+        <div class="shape circle white"></div>
+        <div class="shape triangle big yellow"></div>
+        <div class="shape disc white"></div>
+        <div class="shape triangle blue"></div>
+      </div>
+      <div class="boom-container second">
+        <div class="shape circle big white"></div>
+        <div class="shape circle white"></div>
+        <div class="shape disc white"></div>
+        <div class="shape triangle blue"></div>
+      </div>
+    </div>
+    
+    <script src="index.js"></script>
+  </div>
+
+</body></html>

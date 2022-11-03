@@ -1,0 +1,50 @@
+[
+  {
+      "pregunta": "¿Quien es esta Persona?",
+      "respuesta": " Gustavo Petro",
+      "incorrecta1": "Uribe",
+      "incorrecta2": "Duque",
+      "incorrecta3": "Galan",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Presidente_Gustavo_Petro_Urrego.jpg",
+      "objectFit": "contain"
+      
+  },
+  {
+    "pregunta": "¿Quienes Fueron los los candidatos de las elecciones 2022?",
+    "respuesta": "Gustavo Petro, Rodolfo Hernandez, Sergio Fajardo y Federico Gutierrez",
+    "incorrecta1": "Uribe y Duque ",
+    "incorrecta2": "Francia Marquez, Luis Gilberto Murillo, Rodrigo Lara Sánchez y Jose Luis Esparza",
+    "incorrecta3": "Gustavo Petro y Rodolfo Hernandez",
+    "imagen": "https://www.semana.com/resizer/NXM4qKJjuqGX0YPnXG2dFFDrrwo=/1200x646/filters:format(jpg):quality(50)/cloudfront-us-east-1.images.arcpublishing.com/semana/5WEBFNNIEFGD7FBA3S3DAGB2FM.jpg",
+    "objectFit": "contain"
+    
+  },
+  {
+    "pregunta": "Organiza y ejecuta el proceso electoral, diseña y elabora las cédulas de sufragio, distribuye el material electoral y cuenta los votos. Corresponde a:",
+    "respuesta": "Registraduria Nacional",
+    "incorrecta1": "Defensoria del Pueblo",
+    "incorrecta2": "Contraloria",
+    "incorrecta3": "Ninguna de las Anteriores"
+  },
+  {
+    "pregunta": "Es el documento donde se registran los hechos y actos que se producen en la mesa de sufragio",
+    "respuesta": "Acta Electoral",
+    "incorrecta1": "Tutela",
+    "incorrecta2": "Carta",
+    "incorrecta3": "Registro de Votacion"
+  },
+  {
+    "pregunta": "quien emite el documento identidad en colombia",
+    "respuesta": "Registraduría Nacional del Estado Civil.",
+    "incorrecta1": "Contraloria General",
+    "incorrecta2": "Fiscalia General",
+    "incorrecta3": "Bienestar Familiar"
+  },
+  {
+    "pregunta": "Que organismo se encarga de la dirección, supervisión y control de todos los actos relativos al desarrollo de los procesos electorales y de referendos",
+    "respuesta": "CNE",
+    "incorrecta1": "Registraduria Nacional",
+    "incorrecta2": "Congreso de la Republica",
+    "incorrecta3": "Camara de Representantes"
+  }
+]
