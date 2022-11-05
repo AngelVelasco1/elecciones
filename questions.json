@@ -1,29 +1,29 @@
 [
   {
-      "pregunta": "¿Quien es esta Persona?",
+      "pregunta": "¿Quién es esta Persona?",
       "respuesta": " Gustavo Petro",
       "incorrecta1": "Uribe",
       "incorrecta2": "Duque",
-      "incorrecta3": "Galan",
+      "incorrecta3": "Luis Carlos Galán",
       "imagen": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Presidente_Gustavo_Petro_Urrego.jpg",
       "objectFit": "contain"
       
   },
   {
-    "pregunta": "¿Quienes Fueron los los candidatos de las elecciones 2022?",
-    "respuesta": "Gustavo Petro, Rodolfo Hernandez, Sergio Fajardo y Federico Gutierrez",
-    "incorrecta1": "Uribe y Duque ",
-    "incorrecta2": "Francia Marquez, Luis Gilberto Murillo, Rodrigo Lara Sánchez y Jose Luis Esparza",
-    "incorrecta3": "Gustavo Petro y Rodolfo Hernandez",
+    "pregunta": "¿Quiénes Fueron los candidatos de las elecciones 2022?",
+    "respuesta": "Gustavo Petro, Rodolfo Hernández, Sergio Fajardo y Federico Gutiérrez",
+    "incorrecta1": "Uribe y Duque",
+    "incorrecta2": "Francia Márquez, Luis Gilberto Murillo, Rodrigo Lara Sánchez y Jose Luis Esparza",
+    "incorrecta3": "Gustavo Petro y Rodolfo Hernández",
     "imagen": "https://www.semana.com/resizer/NXM4qKJjuqGX0YPnXG2dFFDrrwo=/1200x646/filters:format(jpg):quality(50)/cloudfront-us-east-1.images.arcpublishing.com/semana/5WEBFNNIEFGD7FBA3S3DAGB2FM.jpg",
     "objectFit": "contain"
     
   },
   {
     "pregunta": "Organiza y ejecuta el proceso electoral, diseña y elabora las cédulas de sufragio, distribuye el material electoral y cuenta los votos. Corresponde a:",
-    "respuesta": "Registraduria Nacional",
-    "incorrecta1": "Defensoria del Pueblo",
-    "incorrecta2": "Contraloria",
+    "respuesta": "Registraduría Nacional del Estado Civil",
+    "incorrecta1": "Defensoría del Pueblo de Colombia",
+    "incorrecta2": "Contraloria General de la República",
     "incorrecta3": "Ninguna de las Anteriores"
   },
   {
@@ -31,20 +31,50 @@
     "respuesta": "Acta Electoral",
     "incorrecta1": "Tutela",
     "incorrecta2": "Carta",
-    "incorrecta3": "Registro de Votacion"
+    "incorrecta3": "Registro de Votación"
   },
   {
-    "pregunta": "quien emite el documento identidad en colombia",
-    "respuesta": "Registraduría Nacional del Estado Civil.",
-    "incorrecta1": "Contraloria General",
-    "incorrecta2": "Fiscalia General",
-    "incorrecta3": "Bienestar Familiar"
+    "pregunta": "¿Quien emite el documento identidad en Colombia?",
+    "respuesta": "Registraduría Nacional del Estado Civil",
+    "incorrecta1": "Contraloria General de la República",
+    "incorrecta2": "Fiscalía General de la Nación",
+    "incorrecta3": "Instituto Colombiano de Bienestar Familiar"
   },
   {
-    "pregunta": "Que organismo se encarga de la dirección, supervisión y control de todos los actos relativos al desarrollo de los procesos electorales y de referendos",
+    "pregunta": "¿Que organismo se encarga de la dirección, supervisión y control de todos los actos relativos al desarrollo de los procesos electorales y de referendos?",
     "respuesta": "CNE",
-    "incorrecta1": "Registraduria Nacional",
-    "incorrecta2": "Congreso de la Republica",
-    "incorrecta3": "Camara de Representantes"
+    "incorrecta1": "Registraduría Nacional del Estado Civil",
+    "incorrecta2": "Congreso de la República de Colombia",
+    "incorrecta3": "Cámara de Representantes de Colombia"
+  },
+  {
+    "pregunta": "¿Que porcentaje de votos se necesita para ser elegido?",
+    "respuesta": "50% + 1 Voto",
+    "incorrecta1": "50% de los Votos",
+    "incorrecta2": "Más de 10 Millones de Votos",
+    "incorrecta3": "100% de los Votos"
+  },
+  {
+    "pregunta": "¿Cuál es el fin de votar?",
+    "respuesta": "Elegir democrática y libremente nuestros representantes",
+    "incorrecta1": "Ganar remuneración",
+    "incorrecta2": "Elegir el representante más famoso",
+    "incorrecta3": "Obligar a elegir un representante"
+  },
+  {
+    "pregunta": "¿Por cuantos periodos es elegido un presidente, alcalde o gobernador/ra?",
+    "respuesta": "4 años",
+    "incorrecta1": "1 año",
+    "incorrecta2": "5 años",
+    "incorrecta3": "3 años"
+  },
+  {
+    "pregunta": "¿Que entidad es?",
+    "respuesta": "Registraduría Nacional del Estado Civil.",
+    "incorrecta1": "Defensoría del Pueblo de Colombia",
+    "incorrecta2": "CNE",
+    "incorrecta3": "Contraloria General de la República",
+    "imagen": "https://www.registraduria.gov.co/IMG/arton15407.png",
+    "objectFit": "contain"
   }
 ]
